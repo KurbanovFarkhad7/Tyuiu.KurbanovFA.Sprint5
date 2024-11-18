@@ -6,14 +6,15 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task1.V7.Lib
     {
         public string SaveToFileTextData(int startValue, int stopValue)
         {
+            int x = 0;
             string outputFile = Path.Combine(Path.GetTempPath(), "OutPutFileTask1.txt");
             using (StreamWriter writer = new StreamWriter(outputFile))
             {
-                for (startValue = -5; stopValue <= 5; startValue += 1)
+                for (x = startValue; x <= stopValue; x += 1)
                 {
-                    double result = CalculateFunction(startValue);
-                    writer.WriteLine($"{startValue}\t\t{result}");
-                    Console.WriteLine($"{startValue}\t\t{result}");
+                    double result = CalculateFunction(x);
+                    writer.WriteLine($"{x}\t\t{result}");
+                    Console.WriteLine($"{x}\t\t{result}");
                 }
                 return outputFile;
             }
