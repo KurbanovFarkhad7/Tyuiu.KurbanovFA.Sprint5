@@ -9,7 +9,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task0.V21.Test
         [TestMethod]
         public void ValidExpression()
         {
-            string path = @"C:\Users\Cruise\source\repos\Tyuiu.KurbanovFA.Sprint5\Tyuiu.KurbanovFA.Sprint5.Task0.V21\bin\Debug\net8.0OutPutFileTask0.txt";
+            string path = @"C:\Users\Cruise\source\repos\Tyuiu.KurbanovFA.Sprint5\Tyuiu.KurbanovFA.Sprint5.Task0.V21\bin\Debug\net8.0appOutPutFileTask0.txt";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExist = fileInfo.Exists;
