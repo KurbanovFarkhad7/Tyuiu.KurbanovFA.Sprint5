@@ -13,8 +13,9 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task1.V7.Lib
                 for (x = startValue; x <= stopValue; x += 1)
                 {
                     double result = CalculateFunction(x);
-                    writer.WriteLine($"{x}\t\t{result}");
-                    Console.WriteLine($"{x}\t\t{result}");
+                    writer.WriteLine(result);
+                    /*writer.WriteLine($"{x}\t\t{result}");*/
+                    /*Console.WriteLine($"{x}\t\t{result}");*/
                 }
                 return outputFile;
             }
