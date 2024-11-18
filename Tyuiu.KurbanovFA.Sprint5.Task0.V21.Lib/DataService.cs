@@ -15,7 +15,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task0.V21.Lib
                 writer.WriteLine(z);
             }
             File.WriteAllText(path, Convert.ToString(z));
-            return path.ToString();
+            return z.ToString();
         }
     }
 }
