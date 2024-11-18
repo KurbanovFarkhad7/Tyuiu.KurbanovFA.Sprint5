@@ -28,7 +28,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task1.V7.Lib
             }
             else
             {
-                return ((Math.Sin(x) / x + 1.2) - Math.Sin(x) * 2 - 2 * x);
+                return ((Math.Sin(x) / (x + 1.2)) - Math.Sin(x) * 2 - 2 * x);
             }
         }
 
