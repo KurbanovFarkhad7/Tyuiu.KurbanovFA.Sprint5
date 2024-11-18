@@ -33,7 +33,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task1.V7
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(x);
+            string res = ds.SaveToFileTextData(-5, 5);
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан");
         }
