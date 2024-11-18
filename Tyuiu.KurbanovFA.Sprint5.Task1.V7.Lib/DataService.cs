@@ -14,7 +14,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task1.V7.Lib
                 {
                     double result = CalculateFunction(x);
                     writer.WriteLine(Math.Round(result, 2));
-                    /*writer.WriteLine($"{x}\t\t{result}");*/
+                    /*writer.WriteLine($"{x}\t\t{result}");*/ 
                     /*Console.WriteLine($"{x}\t\t{result}");*/
                 }
                 return outputFile;
