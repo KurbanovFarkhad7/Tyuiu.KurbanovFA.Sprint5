@@ -10,7 +10,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task0.V21.Lib
             double z = (Math.Pow(x,2) + 1) / Math.Sqrt(4 * Math.Pow(x,2) - 3);
             z = Math.Round(z, 3);
             File.WriteAllText(path, Convert.ToString(z));
-            return path;
+            return path.ToString();
         }
     }
 }
