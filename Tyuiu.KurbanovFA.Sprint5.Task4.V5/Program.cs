@@ -34,6 +34,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task4.V5
             string path = @"C:\Users\Cruise\AppData\Local\Temp\OutPutFileTask4.txt";
             double res = ds.LoadFromDataFile(path);
             Console.WriteLine("Результат: " + res);
+            Console.ReadLine();
         }
     }
 }
