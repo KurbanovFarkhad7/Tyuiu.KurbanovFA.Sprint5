@@ -9,7 +9,8 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task3.V5.Lib
             string outputFile = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
             using (StreamWriter writer = new StreamWriter(outputFile))
             {
-                writer.WriteLine(2 * Math.Pow(x, 3) + (1 / 2) * Math.Pow(x, 2) - 3.5 * x + 2);
+                writer.Write(2 * Math.Pow(x, 3) + 0.5 * Math.Pow(x, 2) - 3.5 * x + 2);
+
             }
             return outputFile;
         }
