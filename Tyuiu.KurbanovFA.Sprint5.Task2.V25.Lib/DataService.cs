@@ -20,11 +20,11 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                     if (matrix[y, x] % 2 != 0)
                     {
                         matrix[y, x] = 0;
-                        Console.Write(matrix[y, x] + "\t");
+                        Console.Write(matrix[y, x] + ";");
                     }
                     else
                     {
-                        Console.Write(matrix[y, x] + "\t");
+                        Console.Write(matrix[y, x] + ";");
                     }
                 }
                 Console.WriteLine();
@@ -36,7 +36,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                 {
                     for (int x = 0; x < matrix.GetLength(1); x++)
                     {
-                        writer.Write(matrix[y,x] + " ");
+                        writer.Write(matrix[y,x] + ";");
                     }
                     writer.WriteLine();
                 }
