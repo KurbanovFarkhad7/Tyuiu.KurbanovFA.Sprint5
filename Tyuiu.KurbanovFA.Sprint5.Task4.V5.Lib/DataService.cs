@@ -6,8 +6,8 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task4.V5.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            string pathTransfer = File.ReadAllText(path);
-            int x = int.Parse(pathTransfer);
+            string pathTransfer = File.ReadAllText(path).Trim();
+            double x = double.Parse(pathTransfer);
             return Math.Round((4.26 * x) / (Math.Sin(x)), 3);
         }
     }
