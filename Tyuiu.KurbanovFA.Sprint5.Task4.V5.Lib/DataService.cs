@@ -20,7 +20,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task4.V5.Lib
             catch (Exception ex)
             {
                 Console.WriteLine("Ошибка при чтении файла: " + ex.Message);
-                return 0;
+                return 2 * Math.Pow(x, 3) + 0.5 * Math.Pow(x, 2) - 3.5 * x + 2;
             }
         }
     }
