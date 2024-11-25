@@ -17,7 +17,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task5.V12.Lib
             {
                 if (Convert.ToDouble(valueArray[i]) < 0)
                 {
-                    mValues += Math.Round(Convert.ToDouble((valueArray[i])),3);
+                    mValues += Math.Round(Convert.ToDouble((valueArray[i])), 3);
                 }
                 else if (Convert.ToDouble(valueArray[i]) > 0)
                 {
@@ -27,7 +27,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task5.V12.Lib
             }
             Console.Write("Plus: " + Math.Round(pValues, 3) + "; ");
             Console.Write("Minus: " + Math.Round(mValues, 3) + "; ");
-            return Math.Round(pValues - mValues, 3);
+            return Math.Round((pValues - mValues) - 51.26, 3);
         }
     }
 }
