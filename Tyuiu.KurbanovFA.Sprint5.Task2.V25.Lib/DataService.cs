@@ -23,7 +23,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                         }
                         else
                         {
-                            writer.WriteLine(x + "\t");
+                            writer.WriteLine(x + "\t"); 
                         }
                     }
 
