@@ -27,7 +27,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task5.V12.Lib
             }
             Console.Write("Plus: " + Math.Round(pValues, 3) + "; ");
             Console.Write("Minus: " + Math.Round(mValues, 3) + "; ");
-            return Math.Round((pValues - mValues) - 51.26, 3);
+            return Math.Round((pValues - mValues), 3);
         }
     }
 }
