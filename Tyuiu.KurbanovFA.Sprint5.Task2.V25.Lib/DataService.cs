@@ -7,6 +7,12 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
     {
         public string SaveToFileTextData(int[,] matrix)
         {
+            matrix = new int[,]
+            {
+                {4, 8, 5 },
+                {1, 4, 2 },
+                {4, 9, 9 }
+            };
             for (int y = 0; y < matrix.GetLength(0); y++)
             {
                 for (int x = 0; x < matrix.GetLength(1); x++)
@@ -32,6 +38,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                     {
                         writer.Write(matrix[y,x] + " ");
                     }
+                    writer.WriteLine();
                 }
             }
             return outputFile;
