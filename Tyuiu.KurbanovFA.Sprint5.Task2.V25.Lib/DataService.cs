@@ -5,7 +5,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
 {
     public class DataService : ISprint5Task2V25
     {
-/*        public string SaveToFileTextData(int[,] matrix)
+        public string SaveToFileTextData(int[,] matrix)
         {
             for (int y = 0; y < matrix.GetLength(0); y++)
             {
@@ -15,18 +15,14 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                     {
                         matrix[y, x] = 0;
                         Console.Write(matrix[y, x]);
-                        if (x < 2)
-                        {
-                            Console.Write(";");
-                        }
                     }
                     else
                     {
                         Console.Write(matrix[y, x]);
-                        if (x < 2)
-                        {
-                            Console.Write(";");
-                        }
+                    }
+                    if (x < 2)
+                    {
+                        Console.Write(";");
                     }
                 }
                 Console.WriteLine();
@@ -46,7 +42,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                     }
                     writer.WriteLine();
                 }
-            }*/
+            }
             return outputFile;
         }
     }
