@@ -1,6 +1,6 @@
-﻿using Tyuiu.KurbanovFA.Sprint5.Task3.V5.Lib;
+﻿using Tyuiu.KurbanovFA.Sprint5.Task4.V5.Lib;
 
-namespace Tyuiu.KurbanovFA.Sprint5.Task3.V5
+namespace Tyuiu.KurbanovFA.Sprint5.Task4.V5
 {
     internal class Program
     {
@@ -12,15 +12,18 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task3.V5
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Потоковый метод записи данных в бинарный файл                     *");
-            Console.WriteLine("* Задание #3                                                              *");
+            Console.WriteLine("* Тема: Чтение данных из текстового файла                                 *");
+            Console.WriteLine("* Задание #4                                                              *");
             Console.WriteLine("* Вариант #5                                                              *");
             Console.WriteLine("* Выполнил: Курбанов Фархаджон Азамжанович | РППб-24-1                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дано выражение, вычислить его значение при x = 2, результат сохранить   *");
-            Console.WriteLine("* в бинарный файл OutPutFileTask3.bin и вывести на консоль.               *");
-            Console.WriteLine("* Округлить до трёх знаков после запятой.                                 *");
+            Console.WriteLine("* Дан файл С:\\DataSprint5\\InPutDataFileTask4V0.txt (файл взять из       *");
+            Console.WriteLine("* архива согласно вашему варианту. Создать папку в ручную                 *");
+            Console.WriteLine("* С:\\DataSprint5\\ и скопировать в неё файл) в котором есть вещественное *");
+            Console.WriteLine("* значение. Прочитать значение из файла и подставить вместо Х в формуле.  *");
+            Console.WriteLine("* Вычислить значение по формуле (Полученное значение округлить до трёх    *");
+            Console.WriteLine("* знаков после запятой) и вернуть полученный результат на консоль.        *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
@@ -28,11 +31,9 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task3.V5
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
-            string res = ds.SaveToFileTextData(2);
-
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан");
+            string path = @"C:\Users\Cruise\AppData\Local\Temp\OutPutFileTask4.txt";
+            double res = ds.LoadFromDataFile(path);
+            Console.WriteLine("Результат: " + res);
         }
     }
 }
