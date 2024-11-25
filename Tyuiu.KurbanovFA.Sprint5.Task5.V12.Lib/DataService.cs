@@ -12,7 +12,6 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task5.V12.Lib
             string pathTransfer = File.ReadAllText(path); //взяли путь
             string stringValues = pathTransfer.Replace(".", ","); //определили как строку, сменили .
             string[] valueArray = stringValues.Split(' '); // Разделяем строку на отдельные элементы (по пробелам)
-            ;
 
             for (int i = 0; i < valueArray.Length; i++)
             {
