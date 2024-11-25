@@ -17,7 +17,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                         Console.Write(matrix[y, x]);
                         if (x < 2)
                         {
-                            Console.Write(";");
+                            Console.Write("; ");
                         }
                     }
                     else
@@ -25,11 +25,11 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                         Console.Write(matrix[y, x]);
                         if (x < 2)
                         {
-                            Console.Write(";");
+                            Console.Write("; ");
                         }
                     }
                 }
-                Console.WriteLine("");
+                Console.WriteLine();
             }
             string outputFile = Path.Combine(Path.GetTempPath(), "OutPutFileTask2.txt");
             using (StreamWriter writer = new StreamWriter(outputFile))
@@ -41,7 +41,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                         writer.Write(matrix[y,x]);
                         if (x < 2)
                         {
-                            writer.Write(";");
+                            writer.Write("; ");
                         }
                     }
                     writer.WriteLine();
