@@ -29,7 +29,13 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(3, 3);
+            int[,] matrix = new int[,]
+            {
+                {4, 8, 5 },
+                {1, 4, 2 },
+                {4, 9, 9 }
+            };
+            string res = ds.SaveToFileTextData(matrix);
             
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан");
