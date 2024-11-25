@@ -38,7 +38,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                 {
                     for (int x = 0; x < matrix.GetLength(1); x++)
                     {
-                        writer.Write(matrix[y,x] + ";");
+                        writer.Write(matrix[y,x]);
                         if (x < 2)
                         {
                             writer.Write(";");
