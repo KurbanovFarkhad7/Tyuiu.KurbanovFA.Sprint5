@@ -26,7 +26,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task7.V4
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            string path = @"C:\Users\Cruise\AppData\Local\Temp\InPutDataFileTask7V4";
+            string path = @"C:\Users\Cruise\AppData\Local\Temp\InPutDataFileTask7V4.txt";
             string res = ds.LoadDataAndSave(path);
             Console.WriteLine("Результат: " + res);
             Console.ReadLine();

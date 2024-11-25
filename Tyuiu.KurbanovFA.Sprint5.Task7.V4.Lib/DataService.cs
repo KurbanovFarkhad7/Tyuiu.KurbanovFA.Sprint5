@@ -6,8 +6,8 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task7.V4.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathTransfer = File.ReadAllText(path);
-            string stringValues = pathTransfer;
+            string pathTransfer = File.ReadAllText(path); //взяли путь
+            string stringValues = pathTransfer; //определили как строку
 
             string result = "";
 
@@ -25,7 +25,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task7.V4.Lib
                     result += c;
                 }
             }
-            string outputFile = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V4");
+            string outputFile = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V4.txt");
             using (StreamWriter writer = new StreamWriter(outputFile))
             {
                 writer.WriteLine(result);
