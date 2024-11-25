@@ -32,6 +32,7 @@ namespace Tyuiu.KurbanovFA.Sprint5.Task2.V25.Lib
                     {
                         writer.Write(matrix[y,x] + "\t");
                     }
+                    writer.WriteLine();
                 }
             }
             return outputFile;
